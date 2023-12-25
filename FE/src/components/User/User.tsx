@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { User } from "../../types/user.type";
 
-type Props = {};
-
-const UserPage = (props: Props) => {
+const UserPage = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   const fetchData = async () => {
